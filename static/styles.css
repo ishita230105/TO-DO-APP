@@ -1,0 +1,50 @@
+:root{
+  --green-1:#198754;
+  --green-2:#22a06b;
+  --hero-bg:linear-gradient(135deg,#e8fff3, #f5fff9);
+}
+
+*{ box-sizing:border-box; }
+body{ font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, sans-serif; background: #f8faf9; }
+
+.bg-gradient-green{
+  background: linear-gradient(90deg, var(--green-1), var(--green-2));
+}
+
+/* Hero */
+.hero{
+  background: var(--hero-bg);
+  padding: 2.5rem 0 1.75rem;
+  border-bottom: 1px solid #e9ecef;
+}
+
+/* Glass effect */
+.glass{
+  backdrop-filter: blur(8px);
+  background: rgba(255,255,255,.88);
+}
+
+/* Cards */
+.task-card{
+  transition: transform .2s ease, box-shadow .2s ease;
+  border-radius: 18px;
+}
+.task-card:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(0,0,0,.08);
+}
+.card{
+  border-radius: 18px;
+}
+
+/* Buttons */
+.btn-check-toggle{
+  border-radius: 999px;
+  width: 36px; height: 36px;
+  display: grid; place-items:center;
+}
+
+/* Inline editor */
+.inline-editor input{
+  border-radius: 12px;
+}
